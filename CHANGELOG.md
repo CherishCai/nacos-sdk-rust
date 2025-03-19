@@ -1,12 +1,36 @@
 # 变更日志 | Change log
 
-### 0.4.2
+### 0.5.0
 
-- 功能: 提供 Aliyun ram AuthPlugin，通过 `features = ["auth-plugin-http"]` 开启
+- 增强: rust-edition=2024, MSRV=1.80
+- 增强: ConfigService / NamingService 改为 struct 而无需 Box<dyn> 包裹
 
 ---
 
-- Feature: Support Aliyun ram AuthPlugin (#245), enabled with `features = ["auth-plugin-http"]`
+- Enhance: rust-edition=2024, MSRV=1.80
+- Enhance: ConfigService / NamingService changed to struct without Box<dyn> wrapping
+
+
+### 0.4.3
+
+- 功能: 提供 Aliyun ram AuthPlugin (#245)，通过 `features = ["auth-by-aliyun"]` 开启
+- 文档: Add aliyun ram examples and improve doc by @luoxiner in #248
+- 增强: use LazyLock replace lazy_static by @CherishCai in #250
+
+---
+
+- Feature: Support Aliyun ram AuthPlugin (#245), enabled with `features = ["auth-by-aliyun"]`
+- Doc: Add aliyun ram examples and improve doc by @luoxiner in #248
+- Chore: use LazyLock replace lazy_static by @CherishCai in #250
+
+
+### 0.4.2 Yank
+
+- 功能: 提供 Aliyun ram AuthPlugin，通过 `features = ["auth-by-aliyun"]` 开启
+
+---
+
+- Feature: Support Aliyun ram AuthPlugin (#245), enabled with `features = ["auth-by-aliyun"]`
 
 ### 0.4.1
 
